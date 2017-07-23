@@ -2,7 +2,7 @@
   "name": "tinkr",
   "version": "1.0.0",
   "description": "A Twitter clone SPA",
-  "main": "js/app/app.js",
+  "main": "src/app/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "lite-server"
