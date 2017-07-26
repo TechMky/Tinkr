@@ -14,18 +14,8 @@ var Template = function () {
             var templateName = config.templateName,
                 selector = config.selector;
 
-            $.ajax({
-                type: "GET",
-                cache: true,
-                url: "src/pages/" + templateName + ".html",
-                dataType: "text",
-                success: function (data) {
-                    $(selector).html(data);
-                },
-                error: function (error) {
-                }
-            });
-
+             $(selector).load("src/pages/" + templateName + ".html");
+             //TODO: Persist page state using # based url structure
         }
     };
 }
