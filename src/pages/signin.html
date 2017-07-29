@@ -1,17 +1,20 @@
-<h1>SignIn</h1>
-<fieldset>
-    <legend>Sign In</legend>
-
-    <label for="username" class="vhide">Username</label>
-    <input id="username" name="username" type="text" placeholder="Username" required minlength="2">
-
-    <label for="password" class="vhide">Password</label>
-    <input id="password" name="password" type="text" placeholder="Password" required minlength="6">
-
-    <input type="checkbox" name="remember" id="remember" class="vhide">
-    <label for="remember">
-                    <i class="octicon octicon-check"></i> Remember me
-                </label>
-    <button class="signin" id="signInBtn">Sign In</button>
-    <a href="#" data-page="register" id="registerLink">Not a member? Register here!</a>
-</fieldset>
+<div class="login-page">
+    <div class="login-banner">
+        <h1>Tinkr</h1>
+    </div>
+    <div class="form">
+        <form class="register-form">
+            <input type="text" placeholder="name" />
+            <input type="password" placeholder="password" />
+            <input type="text" placeholder="email address" />
+            <button>create</button>
+            <p class="message">Already registered? <a href="#">Sign In</a></p>
+        </form>
+        <form class="login-form">
+            <input type="text" placeholder="username" />
+            <input type="password" placeholder="password" />
+            <button>login</button>
+            <p class="message">Not registered? <a href="#">Create an account</a></p>
+        </form>
+    </div>
+</div>
